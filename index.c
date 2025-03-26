@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "bubbleSort/bubbleSort.h"
+#include "insertionSort/insertionSort.h"
 
 void printArray(int arr[], int size) {
     for (int i = 0; i < size; i++)
@@ -18,6 +19,11 @@ int main() {
     bubbleSort(arr1, n);
     printf("Sorted array (Bubble Sort):\n");
     printArray(arr1, n);
+
+    int arr2[] = {64, 34, 25, 12, 22, 11, 90};
+    insertionSort(arr2, n);
+    printf("Sorted array (Insertion Sort):\n");
+    printArray(arr2, n);
 
     return 0;
 }
