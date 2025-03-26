@@ -3,6 +3,7 @@
 #include "insertionSort/insertionSort.h"
 #include "selectionSort/selectionSort.h"
 #include "shellSort/shellSort.h"
+#include "mergeSort/mergeSort.h"
 
 void printArray(int arr[], int size) {
     for (int i = 0; i < size; i++)
@@ -36,6 +37,11 @@ int main() {
     shellSort(arr4, n);
     printf("Sorted array (Shell Sort):\n");
     printArray(arr4, n);
+
+    int arr5[] = {64, 34, 25, 12, 22, 11, 90};
+    mergeSort(arr5, 0, n - 1);
+    printf("Sorted array (Merge Sort):\n");
+    printArray(arr5, n);
 
     return 0;
 }
